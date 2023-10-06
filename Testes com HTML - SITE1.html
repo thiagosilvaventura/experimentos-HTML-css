@@ -1,0 +1,163 @@
+htmlCopy code
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Artigos Científicos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Categorias</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+        <h1>Catálogo de Artigos Científicos</h1>
+    </header>
+
+    <section class="search">
+        <h2>Encontre Artigos Científicos</h2>
+        <form>
+            <input type="text" placeholder="Pesquisar por título, autor, assunto...">
+            <button type="submit">Pesquisar</button>
+        </form>
+    </section>
+
+    <section class="featured-articles">
+        <h2>Artigos em Destaque</h2>
+        <div class="article-card">
+            <h3>Título do Artigo 1</h3>
+            <p>Autor: Nome do Autor 1</p>
+            <p>Resumo: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <a href="#">Leia mais</a>
+        </div>
+        <div class="article-card">
+            <h3>Título do Artigo 2</h3>
+            <p>Autor: Nome do Autor 2</p>
+            <p>Resumo: Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <a href="#">Leia mais</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Catálogo de Artigos Científicos</p>
+    </footer>
+</body>
+</html>
+Aqui, a estrutura HTML inclui um cabeçalho com um menu de navegação, um título principal, uma seção de pesquisa, uma seção de artigos em destaque e um rodapé. Agora, vamos criar um arquivo externo de CSS (styles.css) para adicionar estilos modernos e melhorar a experiência do usuário:
+cssCopy code
+/* styles.css */
+
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+h1 {
+    margin: 0;
+    padding: 10px;
+}
+
+section {
+    padding: 20px;
+}
+
+/* Estilos para a seção de pesquisa */
+.search {
+    background-color: #f5f5f5;
+    text-align: center;
+}
+
+.search h2 {
+    color: #333;
+}
+
+form {
+    margin-top: 10px;
+}
+
+input[type="text"] {
+    width: 80%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+button[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Estilos para a seção de artigos em destaque */
+.featured-articles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.article-card {
+    width: calc(50% - 10px);
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.article-card h3 {
+    color: #333;
+}
+
+.article-card p {
+    color: #666;
+}
+
+.article-card a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.article-card a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos para o rodapé */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
